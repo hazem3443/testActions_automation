@@ -19,11 +19,11 @@ public:
 
 protected:
   void testHelloWorld(void) {
-    system("./hello >nul 2>nul");
+    system("./hello >nul 2>nul");//write to nul to avoid output to console and to not break the test
   }
   void failHelloWorld(void)
   {
-    // exit(1);
+    exit(1);
   }
 };
 
