@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-Makefile:2: *** missing separator.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ Makefile:2: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 27 19:05:23 2022
+# Make data base, printed on Fri May 27 20:20:56 2022
 
 # Variables
 
@@ -184,7 +182,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 DESKTOP_SESSION = ubuntu
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
-# environment
+# 'override' directive
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = hazem
@@ -273,17 +271,18 @@ LC_IDENTIFICATION = en_US.UTF-8
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=130/1024=13%, Rehash=0, Collisions=10/144=7%
+# Load=130/1024=13%, Rehash=0, Collisions=14/163=9%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
+ 
 
 # Directories
 
-# . (device 2058, inode 655903): 7 files, no impossibilities.
+# . (device 2058, inode 655903): 10 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -293,10 +292,17 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Not a target:
 Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-27 19:30:07.900500169
+#  File has been updated.
+#  Successfully updated.
+
+clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	$(RM) hello helloTest
 
 # Not a target:
 .DEFAULT:
@@ -307,23 +313,60 @@ Makefile:
 all:
 #  Command line target.
 #  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 2):
+	g++ -std=c++17 hello.cpp -o hello
+	g++ -std=c++17 helloTest.cpp -lcppunit -o helloTest
+
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 5):
+	chmod +x hello
+	./helloTest
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/6=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/18=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 12 / storage = 111 B / avg = 9 B
-# current buf: size = 8162 B / used = 111 B / count = 12 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 145 B / avg = 8 B
+# current buf: size = 8162 B / used = 145 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 18 / hit rate = 33%
+# strcache performance: lookups = 26 / hit rate = 34%
 # hash-table stats:
-# Load=12/8192=0%, Rehash=0, Collisions=0/18=0%
-# Finished Make data base on Fri May 27 19:05:23 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/26=0%
+# Finished Make data base on Fri May 27 20:20:56 2022
 
  
