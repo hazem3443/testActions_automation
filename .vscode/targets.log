@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 27 20:20:56 2022
+# Make data base, printed on Fri May 27 21:11:42 2022
 
 # Variables
 
@@ -276,13 +276,12 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
- 
 
 # Directories
 
-# . (device 2058, inode 655903): 10 files, no impossibilities.
+# . (device 2058, inode 655903): 15 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -290,10 +289,11 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Files
 
+ 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-27 19:30:07.900500169
+#  Last modified 2022-05-27 21:01:46.825257751
 #  File has been updated.
 #  Successfully updated.
 
@@ -361,12 +361,12 @@ test:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 145 B / avg = 8 B
-# current buf: size = 8162 B / used = 145 B / count = 17 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 178 B / avg = 8 B
+# current buf: size = 8162 B / used = 178 B / count = 22 / avg = 8 B
 
-# strcache performance: lookups = 26 / hit rate = 34%
+# strcache performance: lookups = 31 / hit rate = 29%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Fri May 27 20:20:56 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/31=0%
+# Finished Make data base on Fri May 27 21:11:42 2022
 
  
