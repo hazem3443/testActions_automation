@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World test 5-hello branch!" << endl;
+    cout << "Hello World! from latest modifications" << endl;
     return 0;
 }
