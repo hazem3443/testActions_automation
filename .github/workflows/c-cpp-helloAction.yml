@@ -13,13 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: install cppunit
-      run: sudo apt install -y libcppunit-dev
+    # - name: install cppunit
+    #   run: sudo apt install -y libcppunit-dev
     - name: configure
       run: ./configure
-    - name: make
-      run: make
-    - name: make test
-      run: make test
+    - name: make all
+      run: make all
+    # - name: make test
+    #   run: make test
     - name: make clean
       run: make clean
