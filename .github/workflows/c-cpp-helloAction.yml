@@ -8,7 +8,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./app
+    working-directory: ./Tiva_test/Debug
 
 jobs:
   build-and-test:
