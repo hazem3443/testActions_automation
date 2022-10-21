@@ -1,8 +1,11 @@
-/.vscode
+.vscode
 *.out
 *.map
 *.obj
 *.xml
-/.settings
+.settings
 /actions-runner
-/compiler/
+/compiler
+.launches
+.settings
+

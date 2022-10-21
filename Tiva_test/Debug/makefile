@@ -159,7 +159,7 @@ clean:
 	-@echo ' '
 
 test:
-	-@echo hamada
+	-
 
 .PHONY: all clean dependents
 .SECONDARY:
