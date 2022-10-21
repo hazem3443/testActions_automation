@@ -3,5 +3,6 @@
 *.map
 *.obj
 *.xml
+/.settings
 /actions-runner
-compiler
+/compiler/
