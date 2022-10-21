@@ -4,4 +4,4 @@
 *.obj
 *.xml
 /actions-runner
-/compiler
+compiler
