@@ -24,6 +24,6 @@ jobs:
     - name: check build 
       run: make all
     - name: run tests
-      run: make -f makefile_hazem.mk hazem
+      run: make -f makefile_hazem test
     - name: make clean
       run: make clean
