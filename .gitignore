@@ -8,5 +8,5 @@
 .launches
 .settings
 WS_file
-*.o
-*.pass
+/*.o
+/*.pass
