@@ -1,4 +1,8 @@
+all:test#rund by default
+	-@echo all
+	
 test:hazem
 	-@echo "test"
+
 hazem:
 	-@echo "hello hazem"

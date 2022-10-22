@@ -160,6 +160,9 @@ clean:
 	-@echo 'Finished clean'
 	-@echo ' '
 
+test:
+	-make -f makefile_Tests
+	
 post-build:
 	-"/home/hazem/ti/ccs1120/ccs/utils/tiobj2bin/tiobj2bin" "Tiva_test.out" "Tiva_test.bin" "/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armofd" "/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armhex" "/home/hazem/ti/ccs1120/ccs/utils/tiobj2bin/mkhex4bin"
 	-@echo ' '
