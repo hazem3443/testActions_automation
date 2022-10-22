@@ -5,6 +5,7 @@
  *      Author: hazem
  */
 #include "LedBlinky.h"
+#include "Led.h"
 
 uint32_t LedSetTimes_toBlink(uint8_t const timesToBlink){
 
