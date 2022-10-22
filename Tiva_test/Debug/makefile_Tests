@@ -1,0 +1,4 @@
+test:hazem
+	-@echo "test"
+hazem:
+	-@echo "hello hazem"
