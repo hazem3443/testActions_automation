@@ -9,4 +9,4 @@
 .settings
 WS_file
 /*.o
-/*.pass
+*.pass
