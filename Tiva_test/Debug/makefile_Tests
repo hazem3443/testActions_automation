@@ -1,15 +1,7 @@
-all:test#rund by default
+all:test
 	-@echo all
-	
 test:hazem
-	-@echo "test"
+	-@echo test
 
 hazem:
-	-@echo "hello hazem"
-
-
-#callec directly from the main makefile that is been generated with CCS but 
-#we need to disable that step after the makefile first build
-
-# test:
-# 	-@make -f makefile_Tests
+	-@echo hello hazem

@@ -5,12 +5,13 @@
  *      Author: hazem
  */
 
-#include <stdint.h>
+#include "Led.h"
 
 
 /* Turn on the LED*/
 uint32_t Led_on(uint8_t index){
     GPIOPinWrite(GPIO_PORTF_BASE, index, index);
+    return index*5;
 }
 
 /* Turn off the LED*/

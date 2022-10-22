@@ -10,6 +10,8 @@ GEN_CMDS__FLAG :=
 ORDERED_OBJS += \
 "./main.obj" \
 "./startup_ccs.obj" \
+"./src/Led.obj" \
+"./src/LedBlinky.obj" \
 "../main_ccs.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
@@ -23,7 +25,9 @@ RMDIR := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
+-include src/subdir_vars.mk
 -include subdir_rules.mk
+-include src/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -139,7 +143,7 @@ all: Tiva_test.out
 Tiva_test.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --advice:power=all --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_TM4C123_RB1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"blinky_ccs.map" --heap_size=0 --stack_size=512 -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/lib" -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Tiva_test_linkInfo.xml" --rom_model -o "Tiva_test.out" $(ORDERED_OBJS)
+	"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --advice:power="all" --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_TM4C123_RB1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"blinky_ccs.map" --heap_size=0 --stack_size=512 -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/lib" -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Tiva_test_linkInfo.xml" --rom_model -o "Tiva_test.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
@@ -155,13 +159,10 @@ Tiva_test.bin: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "startup_ccs.obj" 
-	-$(RM) "main.d" "startup_ccs.d" 
+	-$(RM) "main.obj" "startup_ccs.obj" "src/Led.obj" "src/LedBlinky.obj" 
+	-$(RM) "main.d" "startup_ccs.d" "src/Led.d" "src/LedBlinky.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
-	
-test:
-	-@make -f makefile_Tests
 
 post-build:
 	-"/home/hazem/ti/ccs1120/ccs/utils/tiobj2bin/tiobj2bin" "Tiva_test.out" "Tiva_test.bin" "/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armofd" "/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armhex" "/home/hazem/ti/ccs1120/ccs/utils/tiobj2bin/mkhex4bin"

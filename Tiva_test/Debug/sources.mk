@@ -112,4 +112,13 @@ PDE_DEPS__QUOTED :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 . \
+src \
+tests/LedBlinky_Test/build/test/cache \
+tests/LedBlinky_Test/build/test/out/c \
+tests/LedBlinky_Test/build/test/out \
+tests/LedBlinky_Test/build/test/preprocess/files \
+tests/LedBlinky_Test/build/test/preprocess/includes \
+tests/LedBlinky_Test/build/test/runners \
+tests/LedBlinky_Test/src \
+tests/LedBlinky_Test/test \
 

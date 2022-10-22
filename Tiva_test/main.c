@@ -87,8 +87,8 @@ main(void)
     //
     while(1)
     {
-        LedSetTimes_toBlink(LEDGreen);
-        SysCtlDelay(160000000u / 3u);
+        LedSetTimes_toBlink(3);
+        SysCtlDelay(160000000u / 3u);//wait 10sec
 
     }
 }

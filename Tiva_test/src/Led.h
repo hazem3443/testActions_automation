@@ -9,6 +9,11 @@
 #define SRC_LED_H_
 
 #include <stdint.h>
+#include <stdbool.h>
+#include "inc/hw_memmap.h"
+#include "driverlib/gpio.h"
+#include "driverlib/sysctl.h"
+
 
 #define LEDGreen GPIO_PIN_3
 
