@@ -19,11 +19,11 @@ jobs:
     - uses: actions/checkout@v3
     # - name: install cppunit
     #   run: sudo apt install -y libcppunit-dev
-    - name: make clean
+    - name: clean the project
       run: make clean
-    - name: make all
+    - name: check build 
       run: make all
-    # - name: make test
-    #   run: make test
+    - name: run tests
+      run: make -f makefile_hazem.mk hazem
     - name: make clean
       run: make clean

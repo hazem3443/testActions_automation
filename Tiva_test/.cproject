@@ -194,6 +194,15 @@
 		</project-mappings>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
-		<buildTargets/>
+		<buildTargets>
+			<target name="test" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>${CCS_UTILS_DIR}/bin/make</buildCommand>
+				<buildArguments>-f makefile_hazem.mk test</buildArguments>
+				<buildTarget>test</buildTarget>
+				<stopOnError>false</stopOnError>
+				<useDefaultCommand>false</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+		</buildTargets>
 	</storageModule>
 </cproject>
