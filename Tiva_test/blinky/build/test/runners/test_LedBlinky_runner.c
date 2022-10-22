@@ -86,7 +86,7 @@ int main(void)
 {
   UnityBegin("test_LedBlinky.c");
   run_test(test_LedBlinky_normal, "test_LedBlinky_normal", 18);
-  run_test(test_LedBlinky_LEDsCount, "test_LedBlinky_LEDsCount", 37);
+  run_test(test_LedBlinky_LEDsCount, "test_LedBlinky_LEDsCount", 23);
 
   CMock_Guts_MemFreeFinal();
   return UnityEnd();

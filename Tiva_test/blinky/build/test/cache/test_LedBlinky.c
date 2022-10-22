@@ -36,13 +36,7 @@ void test_LedBlinky_normal(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(31), UNITY_DISPLAY_STYLE_INT);
-
-
-
-
-
-
+   ), (UNITY_UINT)(20), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -51,12 +45,6 @@ void test_LedBlinky_normal(void)
 void test_LedBlinky_LEDsCount(void)
 
 {
-
-
-
-
-
-
 
 
 
@@ -70,17 +58,15 @@ void test_LedBlinky_LEDsCount(void)
 
         res1 += 5*0x00000008;
 
-        Led_on_CMockExpectAndReturn(48, 0x00000008, 5*0x00000008);
+        Led_on_CMockExpectAndReturn(31, 0x00000008, 5*0x00000008);
 
-        SysCtlDelay_CMockExpect(49, 16000000u / 3u);
+        SysCtlDelay_CMockExpect(32, 16000000u / 3u);
 
-        Led_off_CMockExpect(50, 1);
+        Led_off_CMockExpect(33, 1);
 
-        SysCtlDelay_CMockExpect(51, 16000000u / 3u);
+        SysCtlDelay_CMockExpect(34, 16000000u / 3u);
 
     }
-
-
 
 
 
@@ -90,6 +76,6 @@ void test_LedBlinky_LEDsCount(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(56), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(38), UNITY_DISPLAY_STYLE_INT);
 
 }
