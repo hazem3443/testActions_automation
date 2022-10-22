@@ -85,24 +85,16 @@ main(void)
     //
     while(1)
     {
-        //
         // Turn on the LED.
-        //
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, GPIO_PIN_3);
 
-        //
         // Delay for a bit.
-        //
         SysCtlDelay(16000000u / 3u);
 
-        //
         // Turn off the LED.
-        //
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_3, 0x0);
 
-        //
         // Delay for a bit.
-        //
         SysCtlDelay(16000000u / 3u);
     }
 }
