@@ -10,3 +10,5 @@
 WS_file
 /*.o
 *.pass
+Tiva_test/blinky/build/test/results/test_led.pass
+Tiva_test/blinky/build/test/results/test_LedBlinky.pass
