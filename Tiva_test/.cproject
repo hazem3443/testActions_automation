@@ -197,11 +197,11 @@
 		<buildTargets>
 			<target name="test" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments>test</buildArguments>
+				<buildArguments/>
 				<buildTarget>test</buildTarget>
 				<stopOnError>false</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
-				<runAllBuilders>true</runAllBuilders>
+				<runAllBuilders>false</runAllBuilders>
 			</target>
 		</buildTargets>
 	</storageModule>
