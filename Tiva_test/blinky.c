@@ -93,9 +93,7 @@ main(void)
         //
         // Delay for a bit.
         //
-        for(ui32Loop = 0; ui32Loop < 200000; ui32Loop++)
-        {
-        }
+        SysCtlDelay(16000000u / 3u);
 
         //
         // Turn off the LED.
@@ -105,8 +103,6 @@ main(void)
         //
         // Delay for a bit.
         //
-        for(ui32Loop = 0; ui32Loop < 200000; ui32Loop++)
-        {
-        }
+        SysCtlDelay(16000000u / 3u);
     }
 }

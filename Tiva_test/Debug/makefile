@@ -139,7 +139,7 @@ all: Tiva_test.out
 Tiva_test.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --advice:power=all --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_TM4C123_RB1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"blinky_ccs.map" --heap_size=0 --stack_size=512 -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/lib" -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Tiva_test_linkInfo.xml" --rom_model -o "Tiva_test.out" $(ORDERED_OBJS)
+	"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --advice:power=all --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_TM4C123_RB1 -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --ual -z -m"blinky_ccs.map" --heap_size=0 --stack_size=512 -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/lib" -i"/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Tiva_test_linkInfo.xml" --rom_model -o "Tiva_test.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 	@$(MAKE) --no-print-directory post-build
