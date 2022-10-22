@@ -8,9 +8,9 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./blinky.obj" \
+"./main.obj" \
 "./startup_ccs.obj" \
-"../blinky_ccs.cmd" \
+"../main_ccs.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
 -l"/home/hazem/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib" \
@@ -155,14 +155,14 @@ Tiva_test.bin: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "blinky.obj" "startup_ccs.obj" 
-	-$(RM) "blinky.d" "startup_ccs.d" 
+	-$(RM) "main.obj" "startup_ccs.obj" 
+	-$(RM) "main.d" "startup_ccs.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
-
-test:
-	-make -f makefile_Tests
 	
+test:
+	-@make -f makefile_Tests
+
 post-build:
 	-"/home/hazem/ti/ccs1120/ccs/utils/tiobj2bin/tiobj2bin" "Tiva_test.out" "Tiva_test.bin" "/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armofd" "/home/hazem/ti/TI-18.12.5.LTS compiler/ti-cgt-arm_18.12.5.LTS/bin/armhex" "/home/hazem/ti/ccs1120/ccs/utils/tiobj2bin/mkhex4bin"
 	-@echo ' '

@@ -4,30 +4,30 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CMD_SRCS += \
-../blinky_ccs.cmd 
+../main_ccs.cmd 
 
 C_SRCS += \
-../blinky.c \
+../main.c \
 ../startup_ccs.c 
 
 C_DEPS += \
-./blinky.d \
+./main.d \
 ./startup_ccs.d 
 
 OBJS += \
-./blinky.obj \
+./main.obj \
 ./startup_ccs.obj 
 
 OBJS__QUOTED += \
-"blinky.obj" \
+"main.obj" \
 "startup_ccs.obj" 
 
 C_DEPS__QUOTED += \
-"blinky.d" \
+"main.d" \
 "startup_ccs.d" 
 
 C_SRCS__QUOTED += \
-"../blinky.c" \
+"../main.c" \
 "../startup_ccs.c" 
 
 
