@@ -5,7 +5,6 @@
 *.xml
 .settings
 /actions-runner
-/compiler
 .launches
 .settings
 WS_file
