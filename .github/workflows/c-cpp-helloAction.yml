@@ -17,13 +17,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    # - name: install cppunit
-    #   run: sudo apt install -y libcppunit-dev
     - name: clean the project
       run: make clean
     - name: check build 
       run: make all
     - name: run tests
-      run: make -f makefile_Tests test
+      run: make test
     - name: make clean
       run: make clean
