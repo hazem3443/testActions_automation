@@ -8,13 +8,11 @@ on:
 
 defaults:
   run:
-    working-directory: ./Tiva_test/Debug
+    working-directory: /home/hazem/Desktop/test_automation/Tiva_test/Debug/
 
 jobs:
   build-and-test:
-
     runs-on: self-hosted
-
     steps:
     - uses: actions/checkout@v3
     - name: Current Dir
