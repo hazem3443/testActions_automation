@@ -8,8 +8,6 @@
 
 
 
-
-
 enum {
 
     MAX_LED = 5
