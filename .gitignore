@@ -1,1 +1,12 @@
-/.vscode
+.vscode
+*.out
+*.map
+*.obj
+*.xml
+.settings
+/actions-runner
+.launches
+.settings
+WS_file
+*.o
+*.pass

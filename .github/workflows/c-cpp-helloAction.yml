@@ -6,18 +6,22 @@ on:
   pull_request:
     branches: [ master ]
 
+defaults:
+  run:
+    working-directory: /home/hazem/Desktop/test_automation/Tiva_test/Debug/
+
 jobs:
   build-and-test:
-
-    runs-on: ubuntu-latest
-
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
-    - name: install cppunit
-      run: sudo apt install -y libcppunit-dev
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make test
+    - name: Current Dir
+      run: pwd
+    - name: cleaning the project
+      run: make clean
+    - name: checking build 
+      run: make all
+    - name: run tests
       run: make test
+    - name: make clean
+      run: make clean
