@@ -17,9 +17,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: clean the project
+    - name: cleaning the project
       run: make clean
-    - name: check build 
+    - name: checking build 
       run: make all
     - name: run tests
       run: make test
