@@ -1,0 +1,2 @@
+all:
+	-@ceedling test:all
