@@ -8,7 +8,7 @@ on:
 
 defaults:
   run:
-    working-directory: /home/hazem/Desktop/test_automation/Tiva_test/Debug/
+    working-directory: /home/hazem/Desktop/testActions_automation/Tiva_test/Debug/
 
 jobs:
   build-and-test:
