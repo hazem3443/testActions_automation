@@ -1,6 +1,0 @@
-all:test
-	-@echo all
-test:hazem
-	-@echo test
-hazem:
-	-@echo hello hazem

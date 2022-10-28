@@ -1,2 +1,0 @@
-all:
-	cd ../blinky/ && ceedlin test:all

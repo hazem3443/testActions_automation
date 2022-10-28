@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Tiva_test/blinky.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;blinky.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="blinky.c" name="main.c" stamp="1666460280365" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Tiva_test/blinky_ccs.cmd&apos; to &apos;main_ccs.cmd&apos;" description="Rename resource &apos;blinky_ccs.cmd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="blinky_ccs.cmd" name="main_ccs.cmd" stamp="1666460327447" updateReferences="true"/>
-</session>

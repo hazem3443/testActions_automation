@@ -1,2 +1,0 @@
-all:
-	cd .. && echo "I'm in some_dir"
