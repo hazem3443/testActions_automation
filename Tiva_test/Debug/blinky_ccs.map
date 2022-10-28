@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker Unix v18.12.5                  
 ******************************************************************************
->> Linked Sat Oct 29 00:41:31 2022
+>> Linked Sat Oct 29 00:44:34 2022
 
 OUTPUT FILE NAME:   <Tiva_test.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00000491
