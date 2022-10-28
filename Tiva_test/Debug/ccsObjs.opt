@@ -1,1 +1,0 @@
-"./main.obj" "./startup_ccs.obj" "./src/Led.obj" "./src/LedBlinky.obj" "../main_ccs.cmd" -llibc.a -l"/home/hazem/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib" 
