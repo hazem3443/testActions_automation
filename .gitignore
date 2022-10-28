@@ -7,6 +7,6 @@
 /actions-runner
 .launches
 .settings
-WS_file
+# WS_file
 *.o
 *.pass
