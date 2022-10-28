@@ -62,7 +62,7 @@ void test_LedBlinky_LEDsCount(void)
 
         SysCtlDelay_CMockExpect(32, 16000000u / 3u);
 
-        Led_off_CMockExpect(33, 1);
+        Led_off_CMockExpect(33, 0x00000008);
 
         SysCtlDelay_CMockExpect(34, 16000000u / 3u);
 

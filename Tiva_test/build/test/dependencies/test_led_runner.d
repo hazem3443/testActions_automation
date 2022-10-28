@@ -7,4 +7,5 @@ build/test/out/c/test_led_runner.o: build/test/runners/test_led_runner.c \
  /home/hazem/ti/tivaware_c_series_2_1_4_178/driverlib/gpio.h \
  build/test/mocks/mock_Led.h src/Led.h \
  /home/hazem/ti/tivaware_c_series_2_1_4_178/inc/hw_memmap.h \
- /home/hazem/ti/tivaware_c_series_2_1_4_178/driverlib/gpio.h
+ /home/hazem/ti/tivaware_c_series_2_1_4_178/driverlib/gpio.h \
+ /home/hazem/ti/tivaware_c_series_2_1_4_178/driverlib/sysctl.h

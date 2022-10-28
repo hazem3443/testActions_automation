@@ -30,7 +30,7 @@ void test_LedBlinky_LEDsCount(void)
         res1 += 5*LEDGreen;
         Led_on_ExpectAndReturn(LEDGreen, 5*LEDGreen);
         SysCtlDelay_Expect(16000000u / 3u);
-        Led_off_Expect(1);
+        Led_off_Expect(LEDGreen);
         SysCtlDelay_Expect(16000000u / 3u);
     }
     
