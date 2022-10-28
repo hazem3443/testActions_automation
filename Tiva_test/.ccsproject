@@ -9,5 +9,6 @@
 	<rts value="libc.a"/>
 	<createSlaveProjects value=""/>
 	<origin value="/home/hazem/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c123gxl/blinky/ccs"/>
-	<isTargetManual value="true"/>
+	<isTargetManual value="false"/>
+	<connection value="common/targetdb/connections/Stellaris_ICDI_Connection.xml"/>
 </projectOptions>
