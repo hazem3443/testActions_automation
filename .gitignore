@@ -5,3 +5,5 @@ Tiva_test/Debug/*.obj
 Tiva_test/Debug/src/LedBlinky.obj
 Tiva_test/Debug/src/Led.obj
 Tiva_test/Debug/startup_ccs.obj
+Tiva_test/Debug/main.obj
+Tiva_test/Debug/src/LedBlinky.obj
