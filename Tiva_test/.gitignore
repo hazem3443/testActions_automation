@@ -3,4 +3,6 @@
 !/Debug/*.bin
 !/Debug/*.hex
 !/Debug/*.out
+!/Debug/makefile*
+!/Debug/*.mk
 
