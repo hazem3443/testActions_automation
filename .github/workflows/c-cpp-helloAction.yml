@@ -22,6 +22,6 @@ jobs:
     - name: checking build 
       run: make all
     - name: run tests
-      run: make test
+      run: make -f makefile_RunTests
     - name: make clean
       run: make clean
