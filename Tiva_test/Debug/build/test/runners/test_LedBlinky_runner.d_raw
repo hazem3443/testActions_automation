@@ -1,0 +1,1 @@
+build/test/runners/test_LedBlinky_runner.obj: ../build/test/runners/test_LedBlinky_runner.c

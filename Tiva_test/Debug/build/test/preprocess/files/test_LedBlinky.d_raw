@@ -1,0 +1,1 @@
+build/test/preprocess/files/test_LedBlinky.obj: ../build/test/preprocess/files/test_LedBlinky.c

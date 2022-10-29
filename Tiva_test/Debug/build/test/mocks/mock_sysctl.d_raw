@@ -1,0 +1,7 @@
+build/test/mocks/mock_sysctl.obj: ../build/test/mocks/mock_sysctl.c
+build/test/mocks/mock_sysctl.obj: /home/hazem/ti/TI-18.12.5.LTS\\ compiler/ti-cgt-arm_18.12.5.LTS/include/string.h
+build/test/mocks/mock_sysctl.obj: /home/hazem/ti/TI-18.12.5.LTS\\ compiler/ti-cgt-arm_18.12.5.LTS/include/_ti_config.h
+build/test/mocks/mock_sysctl.obj: /home/hazem/ti/TI-18.12.5.LTS\\ compiler/ti-cgt-arm_18.12.5.LTS/include/linkage.h
+build/test/mocks/mock_sysctl.obj: /home/hazem/ti/TI-18.12.5.LTS\\ compiler/ti-cgt-arm_18.12.5.LTS/include/sys/cdefs.h
+build/test/mocks/mock_sysctl.obj: /home/hazem/ti/TI-18.12.5.LTS\\ compiler/ti-cgt-arm_18.12.5.LTS/include/stdlib.h
+build/test/mocks/mock_sysctl.obj: /home/hazem/ti/TI-18.12.5.LTS\\ compiler/ti-cgt-arm_18.12.5.LTS/include/setjmp.h
