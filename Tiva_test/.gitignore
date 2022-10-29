@@ -1,2 +1,6 @@
-/Debug/*.obj
-/Debug/*.d
+/Debug/
+!/Debug/*.map
+!/Debug/*.bin
+!/Debug/*.hex
+!/Debug/*.out
+
